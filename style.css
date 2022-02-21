@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+
+:root {
+   /* colors */
+   --advice-wrapper-BG: ;
+   --neon: hsl(150, 100%, 66%);
+   --advice-wrapper-BG: hsl(217, 19%, 24%);
+   --body-BG: hsl(217, 19%, 18%);
+   --separator-BG: hsl(193, 38%, 86%);
+   /* spacing */
+   --advice-text-margin-Y: 30px auto;
+}
+/* Universal */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Manrope";
+}
+
+body {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: var(--body-BG);
+}
+
+.container {
+   max-width: 1440px;
+   margin: auto;
+}
+
+/* advice card */
+
+.advice-wrapper {
+   background: var(--advice-wrapper-BG);
+   width: 560px;
+   padding: 50px;
+   text-align: center;
+   position: relative;
+   border-radius: 10px;
+}
+
+.advice-title {
+   color: var(--neon);
+   text-transform: uppercase;
+   font-size: 12px;
+   letter-spacing: 4px;
+   font-weight: 800;
+}
+
+#advice {
+   font-size: 28px;
+   font-weight: 800;
+   margin: var(--advice-text-margin-Y);
+   color: #fff;
+}
+
+#shuffleButton {
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%, 50%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   background: var(--neon);
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.separator {
+   height: 20px;
+   background: url(./images/pattern-divider-desktop.svg) no-repeat center;
+   margin: 40px auto 20px;
+}
+
+@media screen and (max-width: 600px) {
+   .advice-wrapper {
+      width: 360px;
+      margin: auto;
+      padding: 25px 20px;
+   }
+
+   #advice {
+      font-size: 24px;
+   }
+
+   .separator {
+      background: url(./images/pattern-divider-mobile.svg) no-repeat center;
+   }
+}
+
+/* Footer */
+footer {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+footer.attribution {
+   width: 100%;
+   padding: 10px;
+   font-size: 11px;
+   text-align: center;
+   background: rgba(0, 0, 0, 0.2);
+   color: hsl(228, 3%, 68%);
+}
+footer.attribution a {
+   color: #fff;
+}
