@@ -9,6 +9,7 @@ async function fetchData() {
    if (response.status === 200) {
       let data = await response.json()
       adviceId.innerText = `#${data.slip.id}`
+      console.log(data.slip.id, data.slip.advice)
       advice.innerText = data.slip.advice
    }
 }
