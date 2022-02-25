@@ -13,6 +13,5 @@ async function fetchData() {
       advice.innerText = data.slip.advice
    }
 }
-fetchData()
 
 button.addEventListener("click", fetchData)
