@@ -14,4 +14,4 @@ async function fetchData() {
    }
 }
 
-button.addEventListener("click", fetchData)
+button.addEventListener("click", () => fetchData())
