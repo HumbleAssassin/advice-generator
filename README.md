@@ -1,7 +1,3 @@
-
-
-## Frontend Mentor - Advice generator app(https://humbleassassin.github.io/advice-generator/)
-
 ## Frontend Mentor - Advice generator app(https://humbleassassin.github.io/advice-generator/)
 
 ![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)
